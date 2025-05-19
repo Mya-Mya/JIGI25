@@ -1,0 +1,20 @@
+[project]
+name = "jigi25"
+version = "0.0.1"
+description = "自動車技術会 2025年春季大会併催 第9回学生ポスターセッション でのデモプログラム"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "click>=8.1.8",
+    "LogitechSteeringWheelPy",
+    "networkx",
+    "numpy<2.0,>=1.24.4",
+    "carla",
+    "pandas>=2.2.3",
+    "pygame>=2.6.1",
+    "scipy>=1.15.2",
+    "tqdm>=4.67.1",
+]
+[tool.uv.sources]
+LogitechSteeringWheelPy = { git = "https://github.com/Mya-Mya/LogitechSteeringWheelPy" }
+carla = { path = "./Dependencies/carla-0.10.0-cp312-cp312-win_amd64.whl"}
